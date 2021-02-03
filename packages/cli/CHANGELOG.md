@@ -1,5 +1,16 @@
 # @backstage/cli
 
+## 0.5.1
+
+### Patch Changes
+
+- 398e1f83e: Update `create-plugin` template to use the new composability API, by switching to exporting a single routable extension component.
+- e9aab60c7: Fixed module resolution of external libraries during backend development. Modules used to be resolved relative to the backend entrypoint, but are now resolved relative to each individual module.
+- a08c4b0b0: Add check for outdated/duplicate packages to yarn start
+- Updated dependencies [062df71db]
+- Updated dependencies [e9aab60c7]
+  - @backstage/config-loader@0.5.1
+
 ## 0.5.0
 
 ### Minor Changes

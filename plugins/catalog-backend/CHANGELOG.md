@@ -1,5 +1,27 @@
 # @backstage/plugin-catalog-backend
 
+## 0.6.0
+
+### Minor Changes
+
+- 3149bfe63: Make use of the `resolveUrl` facility of the `integration` package.
+
+  Also rename the `LocationRefProcessor` to `LocationEntityProcessor`, to match the file name. This constitutes an interface change since the class is exported, but it is unlikely to be consumed outside of the package since it sits comfortably with the other default processors inside the catalog builder.
+
+### Patch Changes
+
+- 24e47ef1e: Throw `NotAllowedError` when registering locations with entities of disallowed kinds
+- Updated dependencies [2430ee7c2]
+- Updated dependencies [6e612ce25]
+- Updated dependencies [025e122c3]
+- Updated dependencies [064c513e1]
+- Updated dependencies [7881f2117]
+- Updated dependencies [3149bfe63]
+- Updated dependencies [11cb5ef94]
+  - @backstage/backend-common@0.5.2
+  - @backstage/catalog-model@0.7.1
+  - @backstage/integration@0.3.2
+
 ## 0.5.5
 
 ### Patch Changes
